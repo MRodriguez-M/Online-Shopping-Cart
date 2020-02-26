@@ -72,4 +72,10 @@ public class ItemToPurchase {
     public int getQuantity() {
         return itemQuantity;
     }
+
+    // Function to calculate the cost for each item
+    public int itemTotal(int num1, int num2) {
+        int itemTotal = itemPrice * itemQuantity;
+        return itemTotal;
+    }
 }
