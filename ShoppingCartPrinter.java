@@ -21,5 +21,18 @@ public class ShoppingCartPrinter {
         System.out.print("Enter the item quantity: ");
         productQuantity = scnr.nextInt();
         item1.setQuantity(productQuantity);
+
+        // Prompt user for name, price, and quantity for item 2
+        System.out.println("\nItem 2");
+        System.out.print("Enter the item name: ");
+        scnr.nextLine();
+        productName = scnr.nextLine();
+        item2.setName(productName);
+        System.out.print("Enter the item price: ");
+        productPrice = scnr.nextInt();
+        item2.setPrice(productPrice);
+        System.out.print("Enter the item quantity: ");
+        productQuantity = scnr.nextInt();
+        item2.setQuantity(productQuantity);
     }
 }
