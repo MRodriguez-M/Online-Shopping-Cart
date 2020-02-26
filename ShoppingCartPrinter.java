@@ -34,5 +34,14 @@ public class ShoppingCartPrinter {
         System.out.print("Enter the item quantity: ");
         productQuantity = scnr.nextInt();
         item2.setQuantity(productQuantity);
+
+        // Call function to calcualate item total for each item and output all information
+        System.out.println("\nTOTAL COST");
+        System.out.println(item1.getName() + " " + item1.getQuantity() + " @ $" + item1.getPrice() + " = $" + item1.itemTotal(productPrice, productQuantity));
+        System.out.println(item2.getName() + " " + item2.getQuantity() + " @ $" + item2.getPrice() + " = $" + item2.itemTotal(productPrice, productQuantity));
+
+        // Calculate and output the total cost of both items
+        int cartTotal = item1.itemTotal(productPrice, productQuantity) + item2.itemTotal(productPrice, productQuantity);
+        System.out.println("\nTotal: $" + cartTotal);
     }
 }
